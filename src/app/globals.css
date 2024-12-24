@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    color: black;  
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+h1,h2,h3{
+    font-weight: bold;
+}
+
+/*header*/
+.header{
+    background-color:#f7dbf8;
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+.header .logo{
+    font-size: 25px;
+    color: black;
+}
+.header nav{
+    display: flex;
+    gap: 40px;
+}
+.header nav a{
+    color: black;
+    font-weight: bold;
+}
+.header nav a:hover{
+    text-decoration:underline;
+}
+footer{
+  background-color:#fa9fff;
+    color: black;
+    padding: 20px;
+    text-align: center;
+
+}
+footer p{
+    margin:15px;
+}
+
+.hero {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+ 
+}
+/* Styling for the heading with background */
+.hero h1 {
+  font-size: 3rem; /* Increase font size */
+  font-weight: bold;
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6); 
+  padding: 20px 30px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-top: 10px;
+  color: #fff; 
+  background-color: rgba(17, 17, 17, 0.6); 
+  padding: 10px 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+
+}
+/* Styling for the button */
+.hero button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background-color:#fa9fff; 
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+/* Button hover effect */
+.hero button:hover {
+  background-color:rgb(54, 54, 52); 
+}
+h2 {
+  font-size: 24px;
+  color:white;
+  margin-top: 20px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+  background-color: rgba(17, 17, 17, 0.6); 
+
+}
+
+/* Features List Styling */
+.features-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 1.8;
+  color: solid#fa9fff;
+                
+}
+
+.features-list li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+  
+
+.features-list li i {
+  margin-right: 10px;
+  font-size: 22px;
+ 
+}
+
+
+/* .about Section with Border and Animation */
+.about {
+  background-size: cover;
+  background-position: center;
+  color: solid black;
+  padding: 20px;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  
+}
+
+
+.about-us{
+    max-width: 500px;
+    text-align: left;
+    padding: 30px;
+    border-radius: 10px;
+    margin-right:20px    ;
+    background-color:#f9f9f9;
+
+}
+.about p {
+  font-size: 1.2em;
+  color:black; /* Light gold color for text */
+  line-height: 1.6;
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.about h2 {
+  font-size: 3em;
+  font-weight: bold;
+  color: black; /* Gold color */
+  box-shadow:#4f5752;
+  background-color: #fa9fff;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+
+
+.contact h2 {
+  font-size: 3em;
+  font-weight: bold;
+  color: black; /* Gold color */
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+ 
+.contact-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px; /* Padding around the section */
+   
+  
+  }
+  
+  .contact {
+    max-width: 500px; 
+    padding: 30px;
+    background-color:#f9f9f9; 
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+    
+ 
+  }
+
+  .contact input,
+  .contact textarea,
+  .contact button{
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 8px; 
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    
+  }
+  
+  .contact input:focus,
+  .contact textarea:focus {
+    border-color:pink; /* Blue border when focused */
+    outline: none;
+  }
+  
+  .contact input::placeholder,
+  .contact textarea::placeholder {
+    color: #8c8a8a; 
+  }
+  
+  .contact button {
+    background-color:#ed5ff4; /* Blue background */
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+   
+  }
+  
+  .contact button:hover {
+    color:#8c8a8a;
+   
+  }
+
+
+.watch-card {
+  background-color: #fff;
+  border: 1px solid #fa9fff;
+  border-radius: 10px;
+  width: 250px; /* fixed width for all cards */
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+  
+}
+
+/* Container for the watch cards */
+.watches {
+    display: grid;
+    justify-items: center; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px; 
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    max-width: 100%; 
+    margin: 0 auto;
+}
+
+  .watch-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 8px;
+ 
+  }
+  /* Styling for the name */
+.watch-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+  }
+  .watch-card p {
+    font-size: 14px;
+    color:black;
+    margin-bottom: 10px;
+  }
+/* Price display */
+
+  .watch-card button {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #fff;
+    background-color:#fa9fff;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+.watch-card button:hover {
+    background-color: #4f5752;
+  }
+  
+  /* Hover effect for the card */
+  .watch-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+
+  }
+}
+.fade-in{
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+  @media only screen and (max-width: 786px) {
+    section.contact-form {
+      padding: 6px 13px;
+  }
+  
+  .contact {
+      width: 100%;
+      margin: 0;
+  }
+  
+  header.header {
+      flex-direction: column;
+      gap: 1rem;
+  }
+  
+  .header nav {
+      gap: 20px;
+  }
+  .about-us {
+    padding: 11px 12px;
+    font-size: 13px;
+}
+
+.watches {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content:center; 
+  gap: 20px; 
+  padding: 20px;
+ 
+
+}
+
+.hero h1 {
+  font-size: 2rem;
+}
+
+.features-list {
+  font-size: 16px; 
+  margin: 10px 0; 
+}
+
+.features-list li {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 20px; 
+  margin-bottom: 5px
+}
+h2 {
+  font-size: 20px;
+  letter-spacing: 1px; 
+  margin-top: 10px;
+ 
+}
+
+}
+  
